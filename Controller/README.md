@@ -19,33 +19,54 @@
 The .gif playback speed is increased. You can find the original videos [here](./videos/).
 ##### Scenario 1
 Adjusted the mass to 0.5.
-![Scenario 1](./Gifs/Scenario1.gif)
+
+<p align="center">
+<img src="./Gifs/Scenario1.gif" width="650"/>
+</p>
 
 ##### Scenario 2
 Implemented the body rate control functions.
-![Scenario 2](./Gifs/Scenario2.gif)
+
+<p align="center">
+<img src="./Gifs/Scenario2.gif" width="650"/>
+</p>
+
 
 ##### Scenario 3
 Implemented roll/pitch contro and attitude control.
-![Scenario 3](./Gifs/Scenario3.gif)
+
+<p align="center">
+<img src="./Gifs/Scenario3.gif" width="650"/>
+</p>
 
 ##### Scenario 4
 Exploring non-idealities.
-![scenario 4](./Gifs/Scenario4.gif)
+
+<p align="center">
+<img src="./Gifs/Scenario4.gif" width="650"/>
+</p>
 
 ##### Scenario 5
 Tracking trajectories.
-![Scenario 5](./Gifs/Scenario5.gif)
 
-##### Scenario 6
-Other tests.
-![Scenario 6](./Gifs/Scenario6.gif)
+<p align="center">
+<img src="./Gifs/Scenario5.gif" width="650"/>
+</p>
+
+##### Other Tests
+
+<p align="center">
+<img src="./Gifs/Scenario6.gif" width="650"/>
+</p>
 
 ### C++ controller implementation
 Udacity provides a [project link](https://github.com/udacity/FCND-Controls-CPP) with the simulator implementation and placeholders for the controller code. The project README.md provides a guide to run the project and information on the tasks to be executed for implementing the controller. There are five scenarios we need to cover (as shown above). The simulator runs a scenario in a loop and in the command line prints whether the functions implemented for the controller `PASS` or `FAIL`.
 
 The cascaded controller being implemented has the following structure (taken from Udacity) -
-![cascaded_controller.png](./Gifs/cascaded_controller.png)
+
+<p align="center">
+<img src="./Gifs/cascade_controller.png" width="650"/>
+</p>
 
 
 1. Body rate control function
@@ -169,4 +190,3 @@ PASS: ABS(Quad3.PosFollowErr) was less than 0.100000 for at least 1.500000 secon
 # Scenario 5
 PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
 ```
-
