@@ -93,6 +93,8 @@ were where the drone initialized. Now we will see how to generalize that with an
    ```
 6. In the starter code we are not reducing any unwanted waypoints. Let's implement that now.
    - Implemented the `prune_path()` function in [Line 163](./planning_utils_sid.py#L163) in `planning_utils_sid.py` file. I use a 3 point `collinearity_test` which is implemented at [Line 186](./planning_utils_sid.py#L186).
+   
+7. Short note - there is a larger safety distance issued (8 m) than 5 m as given in the starter code to account for safety robustness. 
 
 ### Flight Execution
 There were two tests executed after implementing the plannig algorithm above.
