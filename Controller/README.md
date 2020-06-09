@@ -190,3 +190,9 @@ PASS: ABS(Quad3.PosFollowErr) was less than 0.100000 for at least 1.500000 secon
 # Scenario 5
 PASS: ABS(Quad2.PosFollowErr) was less than 0.250000 for at least 3.000000 seconds
 ```
+## Acknowledgements
+Thanks to Fotokite for the initial development of the project code and simulator.
+
+Udacity Project FCND - Controller
+Author: Siddhant Tandon
+Date: 9 June 2020
