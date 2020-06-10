@@ -13,9 +13,9 @@ Detailed information on the project is [here](https://github.com/udacity/FCND-Es
 ### Files
 - `QuadEstimatorEKF.cpp`
 - `QuadEstimatorEKF.txt`
-- `QuadController.cpp`
-- `QuadControlParams.txt` 
-- `QuadController_sid.cpp`(from previous project)
+- `QuadControl.cpp`
+- `QuadControlParams.txt`
+- `QuadControl_sid.cpp`(from previous project)
 - `QuadControlParams_sid.cpp` (from previous project)
 
 
@@ -108,7 +108,7 @@ PASS: ABS(Quad.Est.E.Pos) was less than 1.000000 for at least 20.000000 seconds
 
 **Step 6: Conroller From Last Project**
 
-  - Replacing `QuadController.cpp` and `QuadControlParams.txt` with the ones from [previous project](https://github.com/SiddhantTandon/Udacity_FlyingAutonomousCar/tree/master/Controller), [`QuadController_sid.cpp`](./QuadController_sid.cpp) and [`QuadControlParams_sid.txt`](./QuadControlParams_sid.txt). We expect to see poor performance since the tuning is not proper.
+  - Replacing `QuadController.cpp` and `QuadControlParams.txt` with the ones from [previous project](https://github.com/SiddhantTandon/Udacity_FlyingAutonomousCar/tree/master/Controller), [`QuadControl_sid.cpp`](./QuadControl_sid.cpp) and [`QuadControlParams_sid.txt`](./QuadControlParams_sid.txt). We expect to see poor performance since the tuning is not proper.
   -
 <p align="center">
 <img src="./Gifs/Step6a.gif" width="650"/>
