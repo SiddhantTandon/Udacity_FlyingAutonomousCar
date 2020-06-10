@@ -199,12 +199,12 @@ float QuadControl::AltitudeControl(float posZCmd, float velZCmd, float posZ, flo
 
  float err_z = posZCmd - posZ;
 
- integrated_Alt_Err += err_z * dt;
+ integratedAltErr += err_z * dt;
 
  //PID control altitude controller
 
  float p = kpPosZ * err_z;
- float i = KiPosZ * integrated_Alt_Err;
+ float i = KiPosZ * integratedAltErr;
 
 
  float velZRef = velZCmd + p + i;
