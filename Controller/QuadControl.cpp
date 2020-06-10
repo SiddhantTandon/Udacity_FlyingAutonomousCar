@@ -1,6 +1,6 @@
-# Udacity Project FCND - Controls CPP
-# Author: Siddhant Tandon
-# Date: 9 June 2020
+// Udacity Project FCND - Controls CPP
+// Author: Siddhant Tandon
+// Date: 9 June 2020
 
 #include "Common.h"
 #include "QuadControl.h"
