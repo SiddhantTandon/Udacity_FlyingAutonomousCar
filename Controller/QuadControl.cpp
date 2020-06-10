@@ -195,26 +195,27 @@ float QuadControl::AltitudeControl(float posZCmd, float velZCmd, float posZ, flo
   ////////////////////////////// BEGIN STUDENT CODE ///////////////////////////
 
 
- float b_z = R(2,2);
+float b_z = R(2,2);
 
- float err_z = posZCmd - posZ;
+float err_z = posZCmd - posZ;
 
- integratedAltErr += err_z * dt;
+integratedAltitudeError += err_z * dt;
 
- //PID control altitude controller
+//PID control altitude controller
 
- float p = kpPosZ * err_z;
- float i = KiPosZ * integratedAltErr;
+float p = kpPosZ * err_z;
+float i = KiPosZ * integratedAltitudeError;
 
 
- float velZRef = velZCmd + p + i;
- velZRef = -CONSTRAIN(-velZRef, -maxDescentRate, maxAscentRate); // as suggested
+float velZRef = velZCmd + p + i;
+velZRef = -CONSTRAIN(-velZRef, -maxDescentRate, maxAscentRate);
 
- float err_z_vel = velZRef - velZ; // z velocity error
- float d = kpVelZ * err_z_vel;
+float err_z_vel = velZRef - velZ;
+float d = kpVelZ * err_z_vel;
 
- float accelCmd = accelZCmd + d;
- thrust = mass * (9.81f - (accelCmd / b_z));
+float accelCmd = accelZCmd + d;
+thrust = mass * (9.81f - (accelCmd / b_z));
+
 
 
   /////////////////////////////// END STUDENT CODE ////////////////////////////
